@@ -1,0 +1,4 @@
+{
+    "name": "djexports-services",
+    "entry": "./djexports.js"
+}

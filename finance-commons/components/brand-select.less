@@ -1,0 +1,43 @@
+@defMargin :4px 7px;
+@defPadding:4px 7px;
+.moren.selected{
+    background: #FFFFFF;
+    border: 1px solid #4990E2;
+    border-radius: 2px;
+    display: inline-block;
+    padding: @defPadding;
+    color: #4990e2;
+}
+.moren{
+    background: #FFFFFF;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    padding: @defPadding;
+    display: inline-block;
+    cursor: pointer;
+    margin: @defMargin;
+}
+.container{
+    position: relative;
+    padding: 4px 7px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    transition: all .3s;
+    max-height: 160px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.select-desc{
+    margin: @defMargin
+}
+:global(.has-error){
+.container{
+    border-color: #f04134;
+}
+}

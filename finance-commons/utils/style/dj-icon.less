@@ -1,0 +1,46 @@
+// 如果直接写className,用gloabl
+:global{
+    @font-face {
+        font-family: 'dj-icon';  /* project id 543193 */
+        src: url('//at.alicdn.com/t/font_543193_81yz1kf8rxczyqfr.eot');
+        src: url('//at.alicdn.com/t/font_543193_81yz1kf8rxczyqfr.eot?#iefix') format('embedded-opentype'),
+        url('//at.alicdn.com/t/font_543193_81yz1kf8rxczyqfr.woff') format('woff'),
+        url('//at.alicdn.com/t/font_543193_81yz1kf8rxczyqfr.ttf') format('truetype'),
+        url('//at.alicdn.com/t/font_543193_81yz1kf8rxczyqfr.svg#dj-icon') format('svg');
+      }
+    .djicon{
+        display: inline-block;
+        font-style: normal;
+        vertical-align: baseline;
+        text-align: center;
+        text-transform: none;
+        line-break: 1;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing:antialiased;
+        -moz-osx-font-smoothing:grayscale;
+    }
+
+    .djicon:before{
+        display: block;
+        font-family: "dj-icon" !important;
+    }
+
+    .dj-fin-setting:before{
+        content: "\e603";
+    }
+    .dj-fin-retail:before{
+        content: "\e60a";
+    }
+    .dj-fin-Distributor:before{
+        content: "\e607";
+    }
+    .dj-fin-pool:before{
+        content: "\e605";
+    }
+    .dj-fin-supply:before{
+        content: "\e606";
+    }
+    .dj-fin-profit:before{
+        content: "\e608";
+    }
+}

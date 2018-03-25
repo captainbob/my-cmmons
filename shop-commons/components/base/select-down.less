@@ -1,0 +1,44 @@
+//样式优化
+:global{
+    .css-select-item-num {
+        ul{
+            &>.ant-select-selection__choice{
+                background: transparent !important;
+                .ant-select-selection__choice__remove{
+                    display: none;
+                }
+                &+.ant-select-selection__choice{
+                    display: none !important;
+                }
+            }
+            &[data-none],&[data-num]{
+                &>.ant-select-selection__choice{
+                    display: none !important ;
+                }
+            }
+            &[data-num]{
+                &::before{
+                    content:'选择了' attr(data-num) '项';
+                    float:left;
+                    margin-right: 5px;
+                    font-size:12px;
+                    max-height: 26px;
+                    line-height: 32px;
+                    overflow: hidden;
+                }
+            }
+            &[data-num='1']{
+                &::before{
+                    display: none;
+                }
+                &>.ant-select-selection__choice:first-child{
+                    display: inline-block !important;
+                    padding:0;
+                    &+.ant-select-selection__choice{
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+}

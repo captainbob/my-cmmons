@@ -1,0 +1,4 @@
+{
+    "name": "djexports-commons",
+    "entry": "./djexports.js"
+}
